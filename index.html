@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>simplestyle_3</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="jquery.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+ 	 <h1><b><font face="Bauhaus" size="6"><i>the fresh food people</font></i></b></h1>
+         <h2><b><span class="logo_colour"><font size="10">Woolworths</font></span></b></span>&nbsp;<img src="wow.png" align="absmiddle" height="45" width="45"></a></h2>
+        </div><th>
+      </div>
+     <div id='cssmenu'>
+<ul>
+   <li><a href='index.html'><span>Home</span></a></li>
+   <li class='active has-sub'><a href='R8.html'><span>BAU</span></a>
+      <ul>
+         <li class='has-sub'><a href='ISIS.html'><span>ISIS</span></a>
+         </li>
+         <li class='has-sub'><a href='StoreLine.html'><span>Storeline</span></a>
+         </li>
+      </ul>
+   </li>
+   <li><a href='R10.html'><span>1 POS</span></a>
+   </li>
+   <li><a href='SCO.html'><span>SCO</span></a>
+   </li>
+  <li><a href='Lab.html'><span>Lab</span></a></li>  
+</ul>
+  </div>
+  </div>
+    <div id="site_content"><marquee direction="right"><img  height="100" src="faq.png"></marquee>
+      <div id="content">
+	  <table width="900"><tr><th width="65%" valign="">
+<div id="slideshows">
+   <div>
+     <img align="left" src="Woolworths/1.jpg" height="260" width="490">
+   </div>
+   <div>
+     <img align="left" src="Woolworths/2.jpg" height="260" width="490">
+   </div>
+   <div>
+   <img align="left" src="Woolworths/3.jpg" height="260" width="490">
+   </div>
+   <div>
+   <img align="left" src="Woolworths/4.jpg" height="260" width="490">
+   </div>
+   <div>
+   <img align="left" src="Woolworths/5.jpg" height="260" width="490">
+   </div>
+   <div>
+   <img align="left" src="Woolworths/6.jpg" height="260" width="490">
+   </div>
+   </div></th><th width="35%">
+   <p><font size="5" color="darkgreen">Woolworths Banners???</font></p><hr><font size="4" color="darkred">
+	<p>Super Market (SM,TDG,SFS)</p>
+	<p>Countdown</p>
+	<p>Dan Murphy</p>
+	<p>BWS</p>
+	<p>Caltex</p>
+   </font>
+</th></table>
+     <script>
+$("#slideshows > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshows > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshows');
+},  3000);
+</script>
+      </div>
+    </div>
+    <div id="footer"><img src="cts.png" height="45" align="absmiddle">  Cognizant</div>
+</body>
+</html>
